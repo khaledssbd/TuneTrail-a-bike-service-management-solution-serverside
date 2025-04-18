@@ -1,0 +1,78 @@
+{
+  "name": "tune_trail",
+  "author": {
+    "name": "Khaled Siddique",
+    "email": "khaledssbd@gmail.com",
+    "url": "https://khaled-siddique.vercel.app"
+  },
+  "description": "A fast and lightweight bike service management platform built with Typescript Prisma, NodeJS and ExpressJS.",
+  "keywords": [
+    "bike",
+    "servicing",
+    "bike_servicing",
+    "typescript",
+    "prisma",
+    "nodejs",
+    "expressjs"
+  ],
+  "license": "ISC",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/khaledssbd/TuneTrail-a-bike-service-management-solution-serverside.git"
+  },
+  "bugs": {
+    "url": "https://github.com/khaledssbd/TuneTrail-a-bike-service-management-solution-serverside/issues"
+  },
+  "homepage": "https://github.com/khaledssbd/TuneTrail-a-bike-service-management-solution-serverside#readme",
+  "version": "1.0.0",
+  "scripts": {
+    "prod": "NODE_ENV=production node ./dist/server.js",
+    "start": "node ./dist/server.js",
+    "start:prod": "node ./dist/server.js",
+    "prisma": "prisma",
+    "postinstall": "prisma generate",
+    "dev": "tsx watch ./src/server.ts",
+    "start:dev": "tsx watch ./src/server.ts",
+    "build": "tsc",
+    "lint": "eslint src/**/*.ts",
+    "lint:fix": "eslint src/**/*.ts --fix",
+    "format": "prettier . --write",
+    "prisma:migrate": "prisma migrate dev",
+    "prisma:studio": "prisma studio",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "@prisma/client": "^6.6.0",
+    "bcrypt": "^5.1.1",
+    "cloudinary": "^2.6.0",
+    "cookie-parser": "^1.4.7",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^5.1.0",
+    "http-status-codes": "^2.3.0",
+    "jsonwebtoken": "^9.0.2",
+    "multer": "^1.4.5-lts.2",
+    "nodemailer": "^6.10.0",
+    "zod": "^3.24.2"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.24.0",
+    "@types/bcrypt": "^5.0.2",
+    "@types/cookie-parser": "^1.4.8",
+    "@types/cors": "^2.8.17",
+    "@types/express": "^5.0.1",
+    "@types/jsonwebtoken": "9.0.7",
+    "@types/multer": "^1.4.12",
+    "@types/node": "^22.14.0",
+    "@types/nodemailer": "^6.4.17",
+    "eslint": "^9.24.0",
+    "eslint-config-prettier": "^10.1.1",
+    "globals": "^16.0.0",
+    "prisma": "^6.6.0",
+    "ts-node-dev": "^2.0.0",
+    "tsx": "^4.19.3",
+    "typescript": "^5.8.3",
+    "typescript-eslint": "^8.29.1"
+  }
+}
