@@ -16,7 +16,7 @@
     "expressjs"
   ],
   "license": "ISC",
-  "main": "index.js",
+  "main": "dist/server.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/khaledssbd/TuneTrail-a-bike-service-management-solution-serverside.git"
@@ -30,7 +30,6 @@
     "prod": "NODE_ENV=production node ./dist/server.js",
     "start": "node ./dist/server.js",
     "start:prod": "node ./dist/server.js",
-    "prisma": "prisma",
     "postinstall": "prisma generate",
     "dev": "tsx watch ./src/server.ts",
     "start:dev": "tsx watch ./src/server.ts",

@@ -11,7 +11,7 @@ router.get('/status', serviceController.getOverdueServices);
 
 router.get('/:id', serviceController.getServiceByID);
 
-router.put('/:id', serviceController.markServiceCompletedByID);
+router.put('/:id/complete', serviceController.markServiceCompletedByID);
 
 // router.delete('/:id', serviceController.deleteServiceByID);
 
